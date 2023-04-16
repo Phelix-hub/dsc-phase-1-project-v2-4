@@ -756,7 +756,7 @@ Display the graph
 
 plt.show()
     
-    This would show a graph with above plot
+    ![Most Popular Studio based on mobie Popularity](Movie Studios Popularity.png)
 
 Based on above analysis, Microsoft's most likely top ten strong competitors are as below. This is based on popularity of top movies produced
 1. BV
@@ -808,7 +808,7 @@ Display the graph
 
 plt.show()
    
-     This would show a graph for the above plot
+     ![Most Profitable based on most profitable movie](Movie Studios vs Revenue by Most Profitable Movie.png)
 
 
 To Answer 3(a) question on top ten most profitable studios based on the most profitable movie. It is evident that BV (Buena Vista which is a brand name that has historically been used for divisions and subsidiaries of The Walt Disney Company) is the most profitable studio based on the most profitable movie 'Zootopia'. Below is the full top 10 list
@@ -850,7 +850,7 @@ Display the graph
 
     plt.show()
 
-    This would show a graph with above plot
+    ![Most Profitable based on average revenue](Movie Studios vs Average Revenue per studio.png)
     
 
 To Answer 3(b) question on top ten most profitable studios based on average revenues. It is evident below are the most profitable movie studio based on average revenues generated on movies produced from top;
