@@ -76,7 +76,7 @@ Importing different libraries as aliases for purposes of data analysis and explo
 
 ### 1. Box Office Mojo
 
-Below cells load bom.movie_gross.csv.gz as bom_df and preview data in the file for better understanding
+Below load bom.movie_gross.csv.gz as bom_df and preview data in the file for better understanding
 
     bom_df = pd.read_csv('zippedData/bom.movie_gross.csv.gz')
     bom_df.head()
@@ -105,11 +105,11 @@ Below is the output for above .info()
     
 #### BOM Data Cleaning
 
-Below subsequent cells cover data cleaning of the bom_df dataset to make it ready for use in the data analysis (EDA)
+Below cover data cleaning of the bom_df dataset to make it ready for use in the data analysis (EDA)
 
 Looking at the title column, for consistency puporses it makes sense to have the texts uniformly captured with no special characters and same pattern (either capitalized or lower/upper case)
 
-Below cell is a re-usable function that can be called to clean up the title texts
+Below is a re-usable function that can be called to clean up the title texts
 
 
 Define regular expression pattern to match special characters
@@ -187,7 +187,7 @@ Applying a lambda function to confirm that entries of movies are unique and no d
 
 ### 2. Rotten Tomatoes 
 
-Below cells load data on Rotten Tomatoes from rt.movie_info.tsv.gz and rt.reviews.tsv.gz for purposes of doing a sneak preview of rotten tomatoes movies info and reviews. We will read both as csv with tab as the delimeter.
+Below loads data on Rotten Tomatoes from rt.movie_info.tsv.gz and rt.reviews.tsv.gz for purposes of doing a sneak preview of rotten tomatoes movies info and reviews. We will read both as csv with tab as the delimeter.
 
 Loading rotten tomatoes to a data frame and storing in rt_movie
 
@@ -225,7 +225,7 @@ Doing a .info() to get general understanding of the datatypes, number of row ent
 
 #### Rotten Tomattoes Movies Info Data Cleaning
 
-Below cells show various Data cleaning for purposes of subsequent EDA
+Below show various Data cleaning for purposes of subsequent EDA
 Below removes/drops duplicates int he rt_movie dataframe using the id Column as the primary Key
 
     rt_movie_info = rt_movie_info.drop_duplicates(subset='id')
@@ -381,7 +381,7 @@ Removing duplicates in the rt_reviews_info dataframe
 
 ### 3. TheMovieDB
 
-In below cells, we explore TheMovieDB in details to understand more about it for purposes of EDA. We start by reading the csv file into a pandas Dataframe called tmdb_movies_df.
+In below, we explore TheMovieDB in details to understand more about it for purposes of EDA. We start by reading the csv file into a pandas Dataframe called tmdb_movies_df.
 
 We then get more info on this dataset with in order to identify the primary key to use for purposes of later merging it with other dataset dataframes 
 
@@ -416,7 +416,7 @@ With below output
     
 #### TheMovieDB Data Cleaning
 
-Below cells cover cleaning of this tmdb_movies_df by dropping unnecessary columns and rows, handling missing values, formating texts and row entries into the right data types
+Below covers cleaning of this tmdb_movies_df by dropping unnecessary columns and rows, handling missing values, formating texts and row entries into the right data types
 
 ##### Dropping a few columns deemed unnecessary for data exploration phase
 
@@ -504,7 +504,7 @@ output as below
 
 #### The Numbers Data Cleaning
 
-Below cells cover cleaning of this tn_movies_budgets_df by dropping unnecessary columns and rows, handling missing values, formating texts and row entries into the right data types
+Below covers cleaning of this tn_movies_budgets_df by dropping unnecessary columns and rows, handling missing values, formating texts and row entries into the right data types
 
 Making the id column be the index column
 
@@ -610,7 +610,7 @@ Doing a .describe to get statistical measures of the columns with numerical valu
 
 #### Merging of Different Data Frames
 
-Below cells merging of above cleaned the dataframes in order to bring up needed columns for EDA
+Merging of above cleaned the dataframes in order to bring up needed columns for EDA
 
 Merging the Rotten Tomatoes Movie Info and Reviews DataFrames
 
@@ -702,7 +702,7 @@ Adding a 'revenue column' in the merged df as 'worldwide_gross' minus 'productio
 
 #### 1. The Most Popular Movies in the Box Office
 
-Below cells tend to inquire on the most popular movies based on the merged dataset to answer the 1st Question in the Business Understanding
+Below tends to inquire on the most popular movies based on the merged dataset to answer the 1st Question in the Business Understanding
 
 
 Group by the 'title' column and get most popular movies
@@ -730,7 +730,7 @@ The most Popular Movies in the Box Office based on above code are:
 
 What are the most likely strong Competitors Microsoft is likely to face with in the Movie Studio Business?
 
-Below cells tend to answer business understanding question 2 above
+Below tends to answer business understanding question 2 above
 
 
 Group by the 'studio' column and get the average ratings of all movies per studio
@@ -772,7 +772,7 @@ Based on above analysis, Microsoft's most likely top ten strong competitors are 
 
 #### 3. The top 10 most profitable movie studios
 
-Below Cells tend to answer the 3rd question on 
+Below tends to answer the 3rd question on 
 
 What are the top 10 most profitable movie studios as per the data files given based on;
 
